@@ -7,10 +7,20 @@ import { supabase } from "./lib/supabaseClient.js";
 import * as api from "./lib/api.js";
 
 const COLORS = {
-  void: "#09090c", charcoal: "#141319", card: "#1b1a22", cardHi: "#221f2c",
-  line: "rgba(241,238,247,0.09)", purple: "#9b6bff", purpleDeep: "#4b2f8f",
-  green: "#c3ff4d", greenDim: "rgba(195,255,77,0.14)", gold: "#cba967",
-  text: "#f2eff8", textDim: "#a49dbb", textFaint: "#6f6884", red: "#ff6b6b",
+  void: "#08060d",
+  charcoal: "#110d18",
+  card: "#191322",
+  cardHi: "#241a31",
+  line: "rgba(213,255,64,0.12)",
+  purple: "#b44cff",
+  purpleDeep: "#6d21a8",
+  green: "#d5ff40",
+  greenDim: "rgba(213,255,64,0.12)",
+  gold: "#ffb52e",
+  text: "#fffaff",
+  textDim: "#b7a9c5",
+  textFaint: "#786b86",
+  red: "#ff4f7b",
 };
 const FLAVOUR_TAGS = ["Candy","Gas","Creamy","Fruity","Citrus","Berry","Grape","Z","Earthy","Pine","Dessert","Tropical","Mint"];
 const AROMA_TAGS = ["Skunky","Diesel","Floral","Sweet","Spicy","Woody","Sour","Herbal","Musky","Fuel"];
