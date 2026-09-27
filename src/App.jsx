@@ -207,7 +207,7 @@ export default function App() {
     if (!requireAuth()) return;
     try {
       await api.submitReview(strainId, session.user.id, data);
-      showToast("Review posted 🔥 Blaze Score updated");
+      showToast("Review posted 🔥 Flavour Score updated");
       setReviewModalStrain(null);
       setPage((p) => ({ ...p })); // force strain page to refetch
     } catch (e) { showToast(e.message); }
@@ -227,7 +227,7 @@ export default function App() {
         <div style={{ maxWidth: 1180, margin: "0 auto", padding: "14px 16px", display: "flex", alignItems: "center", gap: 16 }}>
           <div onClick={() => nav("home")} style={{ display: "flex", alignItems: "center", gap: 8, cursor: "pointer" }}>
             <div style={{ width: 28, height: 28, borderRadius: 8, background: `linear-gradient(145deg, ${COLORS.purple}, ${COLORS.purpleDeep})`, display: "flex", alignItems: "center", justifyContent: "center" }}>🔥</div>
-            <span className="serif" style={{ fontWeight: 600, fontSize: 18 }}>Blaze Index</span>
+            <span className="serif" style={{ fontWeight: 600, fontSize: 18 }}>FlavourCraverz</span>
           </div>
           <div style={{ flex: 1, position: "relative", maxWidth: 380, marginLeft: "auto" }}>
             <div style={{ display: "flex", alignItems: "center", gap: 8, background: COLORS.card, border: `1px solid ${COLORS.line}`, borderRadius: 10, padding: "8px 12px" }}>
@@ -302,8 +302,8 @@ function AgeGate({ onEnter }) {
     <div style={{ position: "fixed", inset: 0, zIndex: 999, background: "radial-gradient(circle at 30% 20%, #1a1424 0%, #060509 60%)", display: "flex", alignItems: "center", justifyContent: "center", padding: 24 }}>
       <div style={{ maxWidth: 400, width: "100%", background: COLORS.charcoal, border: `1px solid ${COLORS.line}`, borderRadius: 18, padding: 32, textAlign: "center" }}>
         <div style={{ fontSize: 36, marginBottom: 6 }}>🔥</div>
-        <div className="serif" style={{ fontSize: 24, fontWeight: 600, marginBottom: 10 }}>Before you blaze in</div>
-        <p style={{ color: COLORS.textDim, fontSize: 14, marginBottom: 24, lineHeight: 1.6 }}>Blaze Index is an 18+ community for cannabis culture, strain discovery and reviews. We don't sell cannabis or arrange deliveries.</p>
+        <div className="serif" style={{ fontSize: 24, fontWeight: 600, marginBottom: 10 }}>Before you crave in</div>
+        <p style={{ color: COLORS.textDim, fontSize: 14, marginBottom: 24, lineHeight: 1.6 }}>FlavourCraverz is an 18+ community for cannabis culture, strain discovery and reviews. We don't sell cannabis or arrange deliveries.</p>
         <Btn full onClick={onEnter}>I'm 21+ — Enter</Btn>
         <div style={{ marginTop: 16, fontSize: 11, color: COLORS.textFaint, lineHeight: 1.6 }}>By entering you confirm you meet the legal cannabis age in your jurisdiction. No medical claims are made here.</div>
       </div>
