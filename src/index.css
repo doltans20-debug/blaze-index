@@ -8,3 +8,64 @@ img { max-width: 100%; display: block; }
 .hide-scroll::-webkit-scrollbar { display: none; }
 .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
 button, input, textarea, select { font-family: inherit; }
+/* ===== FlavourCraverz Neon Redesign ===== */
+
+:root {
+  --fc-green: #b7ff2a;
+  --fc-lime: #d8ff45;
+  --fc-purple: #a855f7;
+  --fc-pink: #ff3cac;
+  --fc-orange: #ff8a00;
+  --fc-dark: #09060f;
+  --fc-card: rgba(24, 15, 34, 0.88);
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(168,85,247,.22), transparent 32%),
+    radial-gradient(circle at 85% 25%, rgba(255,60,172,.14), transparent 30%),
+    radial-gradient(circle at 50% 90%, rgba(183,255,42,.10), transparent 35%),
+    #09060f;
+  color: #fff;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 20% 40%, rgba(183,255,42,.06), transparent 20%),
+    radial-gradient(circle at 80% 70%, rgba(168,85,247,.08), transparent 25%);
+}
+
+button {
+  transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+}
+
+button:active {
+  transform: scale(.96);
+}
+
+input,
+textarea,
+select {
+  border-radius: 12px;
+}
+
+::selection {
+  background: var(--fc-pink);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--fc-purple), var(--fc-green));
+  border-radius: 20px;
+}
+
